@@ -65,7 +65,7 @@ app.use(function(req , res , next){
 //Index route
 app.get('/' , (req , res) =>{
     const title = 'Welcome'
-    res.render('Index' , {
+    res.render('index' , {
         title : title
     })
 });
@@ -76,7 +76,7 @@ app.use('/users' , user);
 
 //About route
 app.get('/about' , (req ,res) =>{
- res.render('About');
+ res.render('about');
 })
 
 const port = process.env.PORT || 4000;
